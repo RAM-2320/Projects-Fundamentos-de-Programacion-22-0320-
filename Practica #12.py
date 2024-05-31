@@ -12,4 +12,4 @@ elif diferncia % 10 == 4:
   print ("Los digitos son: ", valor_1, valor_2)
 else:
   print("Los valores dados no cumplen ni una condicion :(")
-  print ("Los digitos dados son: ", valor_1, "y" valor_2)
+  print ("Los digitos dados son: ", valor_1, valor_2)
