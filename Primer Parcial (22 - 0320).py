@@ -10,17 +10,19 @@ def capturar_notas():
 
         # Capturar las 4 notas
         for i in range(4):
+            nota = input(f"Ingrese la nota {i+1}: ")
             while True:
-                nota = input(f"Ingrese la nota {i+1}: ")
-                try:
+                if nota.isdigit():
                     nota = float(nota)
                     if nota >= 0:
                         notas.append(nota)
                         break
                     else:
                         print("La nota no puede ser negativa. Inténtelo de nuevo.")
-                except ValueError:
+                        nota = input(f"Ingrese la nota {i+1}: ")
+                else:
                     print("La nota debe ser un número. Inténtelo de nuevo.")
+                    nota = input(f"Ingrese la nota {i+1}: ")
 
         # Calcular el promedio
         promedio = sum(notas) / 4
