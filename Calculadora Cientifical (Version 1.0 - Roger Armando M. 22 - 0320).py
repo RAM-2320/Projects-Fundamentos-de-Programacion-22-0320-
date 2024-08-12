@@ -1,6 +1,6 @@
 import math
 
-def opciones():
+def menu():
     # Opciones de la calculadora
     print("Seleccione una operación:")
     print("1. Sumar")
